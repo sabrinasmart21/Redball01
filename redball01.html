@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Redball Zero One</title>
+				<script>
+				function sayhello()
+				{
+					alert("Hi Sabrina");
+				}
+				function moveleft()
+				{
+					redball.left=redball.left-30;
+				}
+				function moveright()
+				{
+					redball.left=redball.left+30;
+				}
+				function moveup()
+				{
+					redball.top=redball.top-30;
+				}
+				function movedown()
+				{
+					redball.top=redball.top+30;
+				}
+				function movediagdownright()
+				{
+					redball.top=redball.top+30;
+						redball.left=redball.left+30;
+				}
+				function movediagdownleft()
+				{
+					redball.top=redball.top+30;
+						redball.left=redball.left-30;
+				}
+				function movediagupleft()
+				{
+					redball.top=redball.top-30;
+						redball.left=redball.left-30;
+				}
+				function movediagupright()
+				{
+					redball.top=redball.top-30;
+						redball.left=redball.left+30;
+				}
+				{
+				function movesquare()	
+				}
+				    redball.top=30;
+				    	redball.left=redball.left-30
+				{
+				</script>
+				<script src="http://lrn.icstars.org/redball.js"></script>
+		</head>
+			<body>
+				Hello World!
+				<table border="2px;" align= "center">
+				<tr>
+				<td><button onclick="movediagupleft();">Move Diagupleft</button></td>
+				<td><button onclick="moveleft();">Move Left</button></td>
+				<td><button onclick="movediagdownleft();">Move DiagDownleft</button></td>
+				</tr>
+				<tr>
+				<td><button onclick="moveup();">Move Up</button></td>
+				<td><button onclick="sayhello();">Sabrina's Button</button></td>
+				<td><button onclick="movedown();">Move Down</button></td>
+				</tr>
+						<img id="redball" src="redball.jpg"/>
+				<tr>
+				<td><button onclick="movediagupright();">Move Diagupright</button></td>
+				<td><button onclick="moveright();">Move Right</button></td>
+				<td><button onclick="movediagdownright();">Move DiagDownright</button></td>
+				</tr>
+				</table>
+				<table> 
+				<tr>
+				<td><button onclick="movesquare();">Move Square</button></td> 
+				
+
+				</tr>
+				</table>
+		
+			</body>
+
+	</html>
