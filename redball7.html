@@ -1,9 +1,6 @@
 <html>
 <head>
 <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
-<html>
-<head>
-<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
 <script>
 //declare global variables
 var hello;
@@ -15,20 +12,13 @@ function mygame(){
   this.sayhello = function (){
     console.log ('hello world');
   };
-  this.addball = function (){ 
+  this.addball = function (){
     var redball = new ball();
-    var fromServer = '{"cssid":"redball","imgsrc":"http://www.icstars.org/files/redball.jpg"}';
-    jQuery.extend(redball, JSON.parse(fromServer));
+    redball.cssid = "redball";
+    redball.imgsrc = "http://www.icstars.org/files/redball.jpg";
     redball.debug();
     redball.show();
-    var greenball = new ball();
-    var fromServer = '{"cssid":"greenball","imgsrc":"http://www.icstars.org/files/greenball.jpg"}';
-    jQuery.extend(greenball, JSON.parse(fromServer));
-    greenball.debug();
-    greenball.show();
-    
   };
-  
 }
 
 function ball(){
@@ -47,13 +37,8 @@ function ball(){
 </script>
 </head>
 <body>
-<button onclick="hello.sayhello();">say it</button>
+<button onclick="hello.sayhello();">say hello</button>
 <button onclick="hello.addball();">add images</button>
-<button onclick="hello.addball();">subtract images</button>
 <div id="game"></div>
 </body>
 </html>
-
-
-
-
